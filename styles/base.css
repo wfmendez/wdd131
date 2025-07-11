@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h2, h3, span {
+h1, h2, h3, span {
     font-family: 'Domine', serif;
 }
 
@@ -41,6 +41,11 @@ main {
     grid-template-columns: 3fr 1fr;
     max-width: 1200px;
     margin: 8px auto;
+}
+
+h1 {
+    grid-column: 1 / 4;
+    text-align: center;
 }
 
 .card h2 {
@@ -141,6 +146,11 @@ footer {
     main {
         grid-template-columns: 1fr; 
         margin: 8px; 
+    }
+
+    h1 {
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-me-content {
