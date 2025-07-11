@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+h2, h3, span {
+    font-family: 'Domine', serif;
+}
 
 header #course-title {
     display: block;
@@ -101,7 +105,7 @@ footer {
     background-color: #101311;
     text-align: center;
     color: #f0f0f0;
-    padding: 16px;
+    padding: 2em;
 }
 
 .card ul {
