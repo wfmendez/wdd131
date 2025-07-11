@@ -82,6 +82,14 @@ main {
 
 h3 {
     text-align: center;
+    margin-bottom: -4px;
+}
+
+hr {
+border: none;
+border-top: 1px solid #ccc;
+width: 75%;
+margin-bottom: 16px;
 }
 
 .country {
@@ -89,6 +97,12 @@ h3 {
     align-items: center;
     gap: 20px;
     padding: 0 20px 20px 20px;
+}
+
+.venezuela-flag {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .country img {
