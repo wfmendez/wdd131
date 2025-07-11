@@ -148,9 +148,10 @@ footer {
         margin: 8px; 
     }
 
-    h1 {
-        flex-direction: column;
-        text-align: center;
+    main h1 { 
+        grid-column: auto; 
+        font-size: 2em; 
+        margin: 10px 0;
     }
 
     .about-me-content {
