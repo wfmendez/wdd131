@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Czech Republic</title>
-    <meta name="description" content="This website is about the Czech Republic, a destination I want to visit next year. I want to discover Prague's iconic landmarks, medieval towns, and stunning natural landscapes.">
+    <meta name="description"
+        content="This website is about the Czech Republic, a destination I want to visit next year. I want to discover Prague's iconic landmarks, medieval towns, and stunning natural landscapes.">
     <meta name="author" content="Wuillian Fernando Mendez Garcia">
-    <link rel="stylescheet" href="styles\place.css">
-    <script src="scripts\place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Czech Republic</h1>
+    </header>
+    <main>
+        <section class="hero-image">
+            <img src="images/czech-republic-mobile.webp" alt="Scenic view of Czech Republic" srcset="images/czech-republic-mobile.webp 600w,      
+                         images/czech-republic-tablet.webp 1160w,    
+                         images/czech-republic-desktop.webp 1920w"
+                sizes="(max-width: 800px) 100vw, (max-width: 1200px) 100vw, 100vw">
+        </section>
+
+        <section class="overlay-content">
+            <div class="data-section">
+                <h2>Data</h2>
+                <ul>
+                    <li><label>Area:</label> <span>78,866 sq km</span></li>
+                    <li><label>Population:</label> <span>10,700,000</span></li>
+                    <li><label>Capital:</label> <span>Prague</span></li>
+                    <li><label>Languages:</label> <span>Czech, Slovak</span></li>
+                    <li><label>Currency:</label> <span>Czech Koruna</span></li>
+                    <li><label>Time Zone:</label> <span>UTC+1</span></li>
+                    <li><label>Calling Code:</label> <span>+420</span></li>
+                    <li><label>Internet TLD:</label> <span>.cz</span></li>
+                </ul>
+            </div>
+
+            <div class="weather-section">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    ☀️
+                </div>
+                <ul>
+                    <li><label>Temperature:</label> <span id="temperature">10</span> °C</li>
+                    <li><label>Conditions:</label> <span id="conditions">Partly Cloudy</span></li>
+                    <li><label>Wind:</label> <span id="wind-speed">5</span> km/h</li>
+                    <li><label>Wind Chill:</label> <span id="wind-chill">N/A</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Wuillian Fernando Mendez Garcia 📍 Czech Republic</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
 </body>
+
 </html>

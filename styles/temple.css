@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* --- Header --- */
 header {
     background-color: #6a0dad;
     color: white;
@@ -96,14 +95,16 @@ header h1 {
 
 main {
     flex: 1;
-    padding: 1rem;
-    max-width: 960px;
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
+    padding: 0;
+    /* Remueve el padding para evitar espacio extra */
+    max-width: 100%;
+    /* Permite que la imagen se extienda en el main */
+    margin: 0 auto;
+    /* Centra el main */
+    display: block;
+    /* Vuelve a un display de bloque normal para main */
+    position: relative;
+    /* Fundamental para posicionar absolutamente el overlay-content en desktop */
 }
 
 main h1 {
@@ -111,7 +112,7 @@ main h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #6a0dad;
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1; Remueve esta propiedad si main ya no es grid */
 }
 
 figure {
@@ -137,7 +138,6 @@ figcaption {
     font-style: italic;
 }
 
-/* --- Footer --- */
 footer {
     background-color: #6a0dad;
     color: white;
