@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
     header {
+        background-color: #ad0d42;
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
@@ -35,8 +36,8 @@
     }
 
     .navigation a:hover {
-        background-color: #7d2cd3;
-        color: white;
+        background-color: #fff;
+        color: #ad0d42;
     }
 
     main {
