@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ad0d42;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Domine', serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: block;
+    z-index: 1001;
+}
+
+#menu.open {
+    color: #ffd700;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #ad0d42;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.navigation.open {
+    height: auto;
+    min-height: fit-content;
+    max-height: 200px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.navigation a:last-child {
+    border-bottom: none;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #ad0d42;
+}
+
+.navigation a {
+    display: block;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main h2 {
+    font-family: 'Domine', serif;
+    text-align: center;
+    color: #ad0d42;
+    margin-top: 1rem;
+}
+
+figure {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+footer {
+    background-color: #ad0d42;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}

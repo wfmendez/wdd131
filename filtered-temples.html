@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Temple Album - A collection of temples from The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Wuillian Fernando Mendez Garcia">
+    <title>Temple Album - Fernando Mendez</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Navigation">☰</button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple Album Picture</h2>
+        <figure>
+            <img src="images/caracas-temple.webp" alt="Caracas Venezuela Temple" loading="lazy">
+            <figcaption>Caracas Venezuela Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/bogota-temple.webp" alt="Bogota Colombia Temple" loading="lazy">
+            <figcaption>Bogota Colombia Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/mexico-city-temple.webp" alt="Mexico City Temple Mexico Temple" loading="lazy">
+            <figcaption>Mexico City Mexico Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/london-temple.webp" alt="London England Temple" loading="lazy">
+            <figcaption>London England Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rome-temple.webp" alt="Rome Italy Temple" loading="lazy">
+            <figcaption>Rome Italy Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/freiberg-temple.webp" alt="Freiberg Germany Temple" loading="lazy">
+            <figcaption>Freiberg Germany Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/buenos-aires-temple.webp" alt="Buenos Aires Argentina Temple" loading="lazy">
+            <figcaption>Buenos Aires Argentina Venezuela</figcaption>
+        </figure>
+        <figure>
+            <img src="images/paris-temple.webp" alt="Paris France Temple" loading="lazy">
+            <figcaption>Paris France Venezuela</figcaption>
+        </figure>
+        <figure>
+            <img src="images/johannesburg-temple.webp" alt="Johannesburg Southafrica Temple" loading="lazy">
+            <figcaption>Johannesburg Southafrica Temple</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Fernando Mendez - Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/temples.js"></script>
+</body>
+</html>
