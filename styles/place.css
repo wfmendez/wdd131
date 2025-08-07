@@ -114,7 +114,6 @@ main {
 }
 
 .weather-icon {
-    font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -122,6 +121,8 @@ main {
 .weather-icon img {
     width: 60px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
