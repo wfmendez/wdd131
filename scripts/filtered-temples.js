@@ -160,10 +160,10 @@ navLinks.forEach(link => {
                 });
                 break;
             case 'Large':
-                filteredTemples = temples.filter(temple => temple.area >= 90000);
+                filteredTemples = temples.filter(temple => temple.area > 90000);
                 break;
             case 'Small':
-                filteredTemples = temples.filter(temple => temple.area <= 10000);
+                filteredTemples = temples.filter(temple => temple.area < 10000);
                 break;
         }
         createTempleCards(filteredTemples);
