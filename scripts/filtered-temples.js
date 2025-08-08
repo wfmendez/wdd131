@@ -150,20 +150,20 @@ navLinks.forEach(link => {
             case 'Old':
                 filteredTemples = temples.filter(temple => {
                     const year = parseInt(temple.dedicated.split(',')[0]);
-                    return year < 1900;
+                    return year <= 1900;
                 });
                 break;
             case 'New':
                 filteredTemples = temples.filter(temple => {
                     const year = parseInt(temple.dedicated.split(',')[0]);
-                    return year > 2000;
+                    return year >= 2000;
                 });
                 break;
             case 'Large':
-                filteredTemples = temples.filter(temple => temple.area > 90000);
+                filteredTemples = temples.filter(temple => temple.area >= 90000);
                 break;
             case 'Small':
-                filteredTemples = temples.filter(temple => temple.area < 10000);
+                filteredTemples = temples.filter(temple => temple.area <= 10000);
                 break;
         }
         createTempleCards(filteredTemples);
