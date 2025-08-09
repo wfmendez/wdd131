@@ -1,3 +1,12 @@
+const currentYear = new Date().getFullYear();
+
+document.getElementById('currentyear').textContent = currentYear;
+
+
+const lastModifiedDate = document.lastModified;
+
+document.getElementById('lastModified').textContent = `Last Modification: ${lastModifiedDate}`;
+
 const products = [
     {
       id: "fc-1888",
@@ -26,37 +35,25 @@ const products = [
     }
   ];
 
-  // Get the reference to the select element
 const selectElement = document.getElementById('productName');
 
-// Iterate over the products array
 products.forEach(product => {
-    // Create a new option element
     const option = document.createElement('option');
-    // Set the value of the option to the product's id
     option.value = product.id;
-    // Set the visible text of the option to the product's name
     option.textContent = product.name;
-    // Append the option to the select element
     selectElement.appendChild(option);
 });
 
-// Get the counter from localStorage
 let reviewCounter = localStorage.getItem('reviewCounter');
 
-// If it doesn't exist, initialize it to 0
 if (!reviewCounter) {
     reviewCounter = 0;
 } else {
-    // If it exists, convert it to a number
     reviewCounter = parseInt(reviewCounter, 10);
 }
 
-// Increment the counter
 reviewCounter++;
 
-// Save the new value to localStorage
 localStorage.setItem('reviewCounter', reviewCounter);
 
-// Display the counter on the page (make sure you have an element to display it in)
 document.getElementById('reviewCountDisplay').textContent = reviewCounter;
