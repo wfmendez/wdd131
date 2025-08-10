@@ -1,20 +1,32 @@
 /* Estilos generales y variables */
 :root {
-    --primary-color: #34495e;
-    --secondary-color: #2c3e50;
-    --accent-color: #3498db;
-    --text-color: #333;
-    --light-bg-color: #f4f6f9;
-    --white-color: #fff;
-    --card-bg-color: #314457;
+    --primary-color: #0c1c38;
+    --secondary-color: #3b74e8;
+    --accent1-color: #aeb4c0;
+    --accent2-color: #2e3d54;
+    --accent3-color: #f0f0f0;
+
+    --heading-font: "Poppins", Arial, sans-serif;
+    --paragraph-font: "Inter", Helvetica, sans-serif;
+
+    --headline-color-on-white: var(--primary-color);
+    --headline-color-on-color: var(--accent3-color);
+    --paragraph-color-on-white: var(--primary-color);
+    --paragraph-color-on-color: var(--accent3-color);
+    --paragraph-background-color: var(--secondary-color);
+
+    --nav-link-color: var(--accent3-color);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent2-color);
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--paragraph-font);
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--paragraph-color-on-white);
 }
 
 /* Header */
@@ -23,8 +35,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
 }
 
 .header .logo img {
@@ -32,7 +44,7 @@ body {
 }
 
 .header nav a {
-    color: var(--white-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     margin-left: 30px;
     font-weight: 500;
@@ -42,13 +54,14 @@ body {
 .use-cases-content {
     padding: 80px 50px;
     text-align: center;
-    background-color: var(--light-bg-color);
+    background-color: var(--accent3-color);
 }
 
 .use-cases-title {
+    font-family: var(--heading-font);
     font-size: 48px;
     margin-bottom: 50px;
-    color: var(--primary-color);
+    color: var(--headline-color-on-white);
 }
 
 .use-cases-cards-container {
@@ -67,9 +80,9 @@ body {
 
 /* Estilos para cada tarjeta individual */
 .use-case-card {
-    background-color: #0d1a2d;
-    /* El color de fondo de las tarjetas */
-    color: #fff;
+    background-color: var(--primary-color);
+    /* Fondo oscuro para las tarjetas */
+    color: var(--paragraph-color-on-color);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -82,30 +95,33 @@ body {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
+    /* Color de icono no definido, puedes agregar una variable o usar secondary-color */
 }
 
 .use-case-title {
+    font-family: var(--heading-font);
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 .use-case-description {
+    font-family: var(--paragraph-font);
     font-size: 0.9rem;
     line-height: 1.5;
 }
-
-
 
 /* Newsletter Section */
 .newsletter-section {
     text-align: center;
     padding: 80px 50px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-white);
 }
 
 .newsletter-section h2 {
     font-size: 36px;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
     margin-bottom: 10px;
 }
 
@@ -122,12 +138,14 @@ body {
     border-radius: 5px;
     width: 250px;
     font-size: 16px;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
 }
 
 .newsletter-form button {
     padding: 15px 30px;
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -137,7 +155,8 @@ body {
 }
 
 .newsletter-form button:hover {
-    background-color: #2980b9;
+    background-color: var(--accent2-color);
+    /* Usando otro color de acento para el hover */
 }
 
 /* Footer */
@@ -145,8 +164,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 40px 50px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--nav-background-color);
+    color: var(--paragraph-color-on-color);
 }
 
 .footer-logo {
@@ -154,15 +173,18 @@ body {
 }
 
 .footer-logo h3 {
+    font-family: var(--heading-font);
     font-size: 24px;
 }
 
 .footer-logo p {
     font-size: 14px;
     margin-top: 10px;
+    font-family: var(--paragraph-font);
 }
 
 .footer-nav h4 {
+    font-family: var(--heading-font);
     margin-bottom: 15px;
 }
 
@@ -172,21 +194,25 @@ body {
 }
 
 .footer-nav ul li a {
-    color: var(--white-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     line-height: 1.8;
     transition: color 0.3s;
 }
 
 .footer-nav ul li a:hover {
-    color: var(--accent-color);
+    color: var(--nav-hover-link-color);
 }
 
 .copyright {
     text-align: center;
     padding: 20px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--nav-background-color);
+    color: var(--paragraph-color-on-color);
     font-size: 12px;
-    border-top: 1px solid #4a667e;
+    border-top: 1px solid var(--accent2-color);
+}
+
+.header .logo img {
+    height: 80px;
 }
