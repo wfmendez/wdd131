@@ -49,8 +49,11 @@ body {
 }
 
 .header .logo img {
-    height: 80px;
+    width: 160px;
+    height: 160px;
+    margin: -40px;
 }
+
 
 .header nav a {
     color: var(--nav-link-color);
@@ -207,13 +210,21 @@ body {
     }
 
     .logo {
-        position: relative;
-        left: 0;
-        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    .header .logo img {
+        height: 120px !important;
+        margin: -28px 0;
+    }
+
+    #menu,
     .hamburger-icon {
         display: block;
+        position: relative;
+        z-index: 10;
     }
 
     nav {
@@ -238,8 +249,8 @@ body {
         background-color: var(--accent1-color);
         color: var(--headline-color-on-white);
     }
-    
-    #menu-toggle:checked ~ nav {
+
+    #menu-toggle:checked~nav {
         display: flex;
     }
 }
