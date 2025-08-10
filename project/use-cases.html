@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoLINK - Use Cases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/use-cases.css">
     <link rel="stylesheet" href="styles/use-cases-small.css">
     <script src="scripts/infolink.js" defer></script>
+    <script src="scripts/use-cases.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +23,8 @@
         <div class="logo">
             <img src="images/infolink-logo.webp" alt="InfoLINK Logo">
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
         <nav>
             <a href="index.html">Home</a>
             <a href="how-it-works.html">How it works</a>
@@ -33,11 +42,20 @@
     <section class="newsletter-section">
         <h2>Stay up to date</h2>
         <p>Subscribe to our newsletter for the latest news on Chainlink and Web3.</p>
-        <div class="newsletter-form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <button>Subscribe</button>
-        </div>
+        <form id="newsletterForm" class="newsletter-form">
+            <div class="input-group">
+                <div>
+                    <label for="nameInput">Name</label>
+                    <input type="text" id="nameInput" name="name" placeholder="Name">
+                </div>
+                <div>
+                    <label for="emailInput">Email</label>
+                    <input type="email" id="emailInput" name="email" placeholder="Email">
+                </div>
+                <button type="submit" id="subscribeButton">Subscribe</button>
+            </div>
+            <p id="subscriptionMessage" class="hidden"></p>
+        </form>
     </section>
 
     <footer class="footer">
