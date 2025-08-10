@@ -1,3 +1,25 @@
+:root {
+    --primary-color: #0c1c38;
+    --secondary-color: #3b74e8;
+    --accent1-color: #aeb4c0;
+    --accent2-color: #2e3d54;
+    --accent3-color: #f0f0f0;
+
+    --heading-font: "Poppins", Arial, sans-serif;
+    --paragraph-font: "Inter", Helvetica, sans-serif;
+
+    --headline-color-on-white: var(--primary-color);
+    --headline-color-on-color: var(--accent3-color);
+    --paragraph-color-on-white: var(--primary-color);
+    --paragraph-color-on-color: var(--accent3-color);
+    --paragraph-background-color: var(--secondary-color);
+
+    --nav-link-color: var(--accent3-color);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
