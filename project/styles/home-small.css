@@ -1,0 +1,166 @@
+/* home-small.css */
+
+/*
+  Este archivo contiene estilos para pantallas pequeñas (móviles).
+  Se debe importar en el HTML después del CSS principal para
+  sobrescribir las reglas de escritorio.
+*/
+
+@media (max-width: 800px) {
+
+    /* Secciones principales */
+    .header,
+    .hero,
+    .info-section,
+    .newsletter-section,
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*
+    CABECERA (HEADER)
+  */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .header .logo img {
+        height: 40px;
+        /* Tamaño del logo más pequeño */
+    }
+
+    .header nav {
+        margin-top: 10px;
+        width: 100%;
+        /* Para que la navegación ocupe todo el ancho */
+        text-align: left;
+    }
+
+    .header nav a {
+        margin-left: 0;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .header nav a:last-child {
+        margin-right: 0;
+    }
+
+    /*
+    SECCIÓN HERO
+  */
+    .hero {
+        flex-direction: column;
+        /* Apilar los elementos verticalmente */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        gap: 40px;
+        /* Separación entre el texto y la imagen */
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        /* Reducir tamaño del título principal */
+        margin-bottom: 10px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+        /* Imagen más pequeña */
+    }
+
+    /*
+    SECCIÓN DE INFORMACIÓN
+  */
+    .info-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        /* Apilar las tarjetas verticalmente */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        /* Las tarjetas ocupan el 100% del ancho */
+        padding: 30px 15px;
+    }
+
+    /*
+    SECCIÓN DE NEWSLETTER
+  */
+    .newsletter-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .newsletter-section h2 {
+        font-size: 28px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        /* Apilar los campos de formulario y el botón */
+        gap: 15px;
+        max-width: 300px;
+        /* Limitar el ancho del formulario para que se vea bien */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        /* Los inputs y el botón ocupan el 100% del ancho del contenedor */
+    }
+
+    /*
+    PIE DE PÁGINA (FOOTER)
+  */
+    .footer {
+        flex-direction: column;
+        /* Apilar el logo y la navegación */
+        text-align: center;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-logo {
+        max-width: none;
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        /* Mostrar los enlaces de navegación del footer en línea */
+        justify-content: center;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .footer-nav ul li a {
+        line-height: 1.2;
+    }
+
+    .copyright {
+        padding: 15px;
+    }
+}
