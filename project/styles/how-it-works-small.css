@@ -1,14 +1,5 @@
-/* home-small.css */
-
-/*
-  Este archivo contiene estilos para pantallas pequeñas (móviles).
-  Se debe importar en el HTML después del CSS principal para
-  sobrescribir las reglas de escritorio.
-*/
-
 @media (max-width: 768px) {
 
-    /* Secciones principales */
     .header,
     .how-it-works-hero,
     .content,
@@ -18,9 +9,6 @@
         padding-right: 20px;
     }
 
-    /*
-    CABECERA (HEADER)
-  */
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -48,9 +36,6 @@
         margin-right: 0;
     }
 
-    /*
-    SECCIÓN HERO
-  */
     .how-it-works-hero {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -60,9 +45,6 @@
         font-size: 32px;
     }
 
-    /*
-    CONTENIDO PRINCIPAL
-  */
     .content {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -70,7 +52,6 @@
 
     .feature-section {
         flex-direction: column;
-        /* Apilar el texto y la imagen */
         text-align: center;
         gap: 20px;
         margin-bottom: 40px;
@@ -78,7 +59,6 @@
 
     .feature-section.right {
         flex-direction: column;
-        /* Sobrescribir la dirección inversa para que se apile igual */
     }
 
     .feature-text h2 {
@@ -93,12 +73,8 @@
     .feature-image {
         width: 250px;
         height: 250px;
-        /* Tamaño de la imagen más pequeño */
     }
 
-    /*
-    SECCIÓN DE NEWSLETTER
-  */
     .newsletter-section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -110,7 +86,8 @@
 
     .newsletter-form {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 16px;
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
@@ -121,9 +98,6 @@
         width: 100%;
     }
 
-    /*
-    PIE DE PÁGINA (FOOTER)
-  */
     .footer {
         flex-direction: column;
         text-align: center;

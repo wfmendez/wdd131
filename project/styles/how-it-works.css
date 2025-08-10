@@ -28,7 +28,6 @@ body {
     color: var(--paragraph-color-on-white);
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -49,7 +48,6 @@ body {
     font-weight: 500;
 }
 
-/* Hero Section */
 .how-it-works-hero {
     text-align: center;
     padding: 32px 24px;
@@ -64,7 +62,6 @@ body {
     color: var(--headline-color-on-color);
 }
 
-/* Main Content */
 .content {
     padding: 80px 50px;
     background-color: var(--accent3-color);
@@ -102,11 +99,9 @@ body {
     width: 400px;
     height: 400px;
     background-color: var(--accent1-color);
-    /* Usando un color de acento para el fondo de la imagen */
     border-radius: 10px;
 }
 
-/* Newsletter Section */
 .newsletter-section {
     text-align: center;
     padding: 80px 50px;
@@ -152,10 +147,8 @@ body {
 
 .newsletter-form button:hover {
     background-color: var(--accent2-color);
-    /* Usando otro color de acento para el hover */
 }
 
-/* Footer */
 .footer {
     display: flex;
     justify-content: space-around;

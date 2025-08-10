@@ -69,7 +69,7 @@ const cardsContainer = document.querySelector('.use-cases-cards-container');
 useCases.forEach(useCase => {
   const cardHtml = `
     <div class="use-case-card">
-      <img src="${useCase.imageIcon}" alt="${useCase.useCasesName} Icon" class="use-case-icon">
+      <img src="${useCase.imageIcon}" alt="${useCase.useCasesName} Icon" class="use-case-icon" loading="lazy">
       <h3 class="use-case-title">${useCase.useCasesName}</h3>
       <p class="use-case-description">${useCase.description}</p>
     </div>

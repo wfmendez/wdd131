@@ -1,4 +1,3 @@
-/* Estilos generales y variables */
 :root {
     --primary-color: #0c1c38;
     --secondary-color: #3b74e8;
@@ -29,7 +28,6 @@ body {
     color: var(--paragraph-color-on-white);
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +48,6 @@ body {
     font-weight: 500;
 }
 
-/* Main Content */
 .use-cases-content {
     padding: 80px 50px;
     text-align: center;
@@ -67,27 +64,19 @@ body {
 .use-cases-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas de igual tamaño */
     gap: 20px;
-    /* Espacio entre las tarjetas */
     padding: 20px;
-    /* Espacio alrededor del contenedor */
     justify-items: center;
-    /* Centra las tarjetas horizontalmente */
     align-items: center;
-    /* Centra las tarjetas verticalmente */
 }
 
-/* Estilos para cada tarjeta individual */
 .use-case-card {
     background-color: var(--primary-color);
-    /* Fondo oscuro para las tarjetas */
     color: var(--paragraph-color-on-color);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     max-width: 300px;
-    /* Para que las tarjetas no sean demasiado anchas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -95,7 +84,6 @@ body {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
-    /* Color de icono no definido, puedes agregar una variable o usar secondary-color */
 }
 
 .use-case-title {
@@ -110,7 +98,6 @@ body {
     line-height: 1.5;
 }
 
-/* Newsletter Section */
 .newsletter-section {
     text-align: center;
     padding: 80px 50px;
@@ -156,10 +143,8 @@ body {
 
 .newsletter-form button:hover {
     background-color: var(--accent2-color);
-    /* Usando otro color de acento para el hover */
 }
 
-/* Footer */
 .footer {
     display: flex;
     justify-content: space-around;

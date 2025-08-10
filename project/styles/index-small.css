@@ -1,14 +1,6 @@
-/* home-small.css */
-
-/*
-  Este archivo contiene estilos para pantallas pequeñas (móviles).
-  Se debe importar en el HTML después del CSS principal para
-  sobrescribir las reglas de escritorio.
-*/
 
 @media (max-width: 800px) {
 
-    /* Secciones principales */
     .header,
     .hero,
     .info-section,
@@ -18,9 +10,6 @@
         padding-right: 20px;
     }
 
-    /*
-    CABECERA (HEADER)
-  */
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -30,13 +19,11 @@
 
     .header .logo img {
         height: 40px;
-        /* Tamaño del logo más pequeño */
     }
 
     .header nav {
         margin-top: 10px;
         width: 100%;
-        /* Para que la navegación ocupe todo el ancho */
         text-align: left;
     }
 
@@ -50,22 +37,16 @@
         margin-right: 0;
     }
 
-    /*
-    SECCIÓN HERO
-  */
     .hero {
         flex-direction: column;
-        /* Apilar los elementos verticalmente */
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
         gap: 40px;
-        /* Separación entre el texto y la imagen */
     }
 
     .hero-text h1 {
         font-size: 32px;
-        /* Reducir tamaño del título principal */
         margin-bottom: 10px;
     }
 
@@ -75,14 +56,10 @@
     }
 
     .hero-image {
-        width: 200px;
-        height: 200px;
-        /* Imagen más pequeña */
+        width: 240px;
+        height: 240px;
     }
 
-    /*
-    SECCIÓN DE INFORMACIÓN
-  */
     .info-section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -90,19 +67,15 @@
 
     .info-cards {
         flex-direction: column;
-        /* Apilar las tarjetas verticalmente */
         gap: 20px;
+        align-items: center;
     }
 
     .card {
-        width: 100%;
-        /* Las tarjetas ocupan el 100% del ancho */
-        padding: 30px 15px;
+        width: 80%;
+        padding: 8px 8px;
     }
 
-    /*
-    SECCIÓN DE NEWSLETTER
-  */
     .newsletter-section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -114,10 +87,9 @@
 
     .newsletter-form {
         flex-direction: column;
-        /* Apilar los campos de formulario y el botón */
-        gap: 15px;
+        align-items: center;
+        gap: 16px;
         max-width: 300px;
-        /* Limitar el ancho del formulario para que se vea bien */
         margin-left: auto;
         margin-right: auto;
     }
@@ -125,15 +97,10 @@
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
-        /* Los inputs y el botón ocupan el 100% del ancho del contenedor */
     }
 
-    /*
-    PIE DE PÁGINA (FOOTER)
-  */
     .footer {
         flex-direction: column;
-        /* Apilar el logo y la navegación */
         text-align: center;
         gap: 30px;
         padding-top: 30px;
@@ -150,7 +117,6 @@
 
     .footer-nav ul {
         display: flex;
-        /* Mostrar los enlaces de navegación del footer en línea */
         justify-content: center;
         gap: 20px;
         padding-left: 0;

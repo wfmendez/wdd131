@@ -1,14 +1,4 @@
-/* use-cases-small.css */
-
-/*
-  Este archivo contiene estilos para pantallas pequeñas (móviles).
-  Se debe importar en el HTML después del CSS principal para
-  sobrescribir las reglas de escritorio.
-*/
-
 @media (max-width: 768px) {
-
-    /* Secciones principales */
     .header,
     .use-cases-content,
     .newsletter-section,
@@ -17,9 +7,6 @@
         padding-right: 20px;
     }
 
-    /*
-    CABECERA (HEADER)
-  */
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -47,9 +34,6 @@
         margin-right: 0;
     }
 
-    /*
-    CONTENIDO PRINCIPAL
-  */
     .use-cases-content {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -60,31 +44,29 @@
         margin-bottom: 30px;
     }
 
-    .case-studies-grid {
+    .use-cases-cards-container { 
+        display: grid;
         grid-template-columns: 1fr;
-        /* Una sola columna para móviles */
+        gap: 20px;
     }
 
-    .case-study-card {
+    .use-case-card {
         padding: 30px 15px;
     }
-
-    .card-icon {
+    
+    .use-case-icon {
         width: 80px;
         height: 80px;
     }
 
-    .case-study-card h3 {
+    .use-case-card h3.use-case-title {
         font-size: 20px;
     }
 
-    .case-study-card p {
+    .use-case-card p.use-case-description {
         font-size: 14px;
     }
 
-    /*
-    SECCIÓN DE NEWSLETTER
-  */
     .newsletter-section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -96,7 +78,8 @@
 
     .newsletter-form {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 16px;
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
@@ -107,9 +90,6 @@
         width: 100%;
     }
 
-    /*
-    PIE DE PÁGINA (FOOTER)
-  */
     .footer {
         flex-direction: column;
         text-align: center;
